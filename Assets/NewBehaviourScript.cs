@@ -9,6 +9,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.D))
             Debug.Log("test"+ Input.GetAxis("Horizontal"));
+        test
     }
 
 }
