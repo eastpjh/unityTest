@@ -5,10 +5,10 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
 
-    void Update()
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.D))
-            Debug.Log("test"+ Input.GetAxis("Horizontal"));
+        Vector3 vec = new Vector3(5,0,0);
+        transform.Translate(vec);
     }
 
 }
