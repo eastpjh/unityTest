@@ -10,10 +10,12 @@ public class NewBehaviourScript : MonoBehaviour
        
     }
 
+    Vector3 target = new Vector3(8,3,3);
+
     void Update()
     {
-        Vector3 vec = new Vector3(Input.GetAxis("Vertical"), Input.GetAxis("Horizontal"), 0);
-        transform.Translate(vec);
+        Vector3 value = Vector3.zero;
+        transform.position = Vector3.Lerp(transform.position, target, 0.01f);
     }
 
 }
